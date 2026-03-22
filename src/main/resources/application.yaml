@@ -1,3 +1,21 @@
 spring:
   application:
     name: pdf-cracker
+  servlet:
+    multipart:
+      max-file-size: 50MB
+      max-request-size: 50MB
+
+  datasource:
+    url: jdbc:mysql://localhost:3306/infobip_sql_integration
+    username: root
+    password: 654654654zxA@
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    database-platform: org.hibernate.dialect.MySQLDialect
+    hibernate:
+      ddl-auto: none
+    show-sql: true
+
+filesystem:
+  location: C:\Documentos
